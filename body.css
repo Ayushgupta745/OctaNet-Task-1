@@ -1,111 +1,61 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background: linear-gradient(to right, #4CAF50, #2E8B57);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    color: #333;
 }
-
 header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
     width: 100%;
-    position: absolute;
-    top: 0;
-}
-
-header .container {
+    background-color: #9b9595;
+    color: white;
+    padding: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
-
-header .logo {
-    font-size: 1.5rem;
+header img {
+    height: 100px;
+    margin-left: 10px;
 }
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+header nav {
+    margin-right: 20px;
+}
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+.slider-container {
+    width: 80%;
     display: flex;
+    margin:  20px ;
 }
-
-header nav ul li {
-    margin-left: 20px;
+.slider-container .slider {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
 }
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.slider-container .slider img {
+    max-width: 600px;
+    max-height: 400px;
+    display: none;
 }
-
-.login-container {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    width: 100%;
-    text-align: center;
-}
-
-.login-container h2 {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-group label {
+.slider-container .slider img.active {
     display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
 }
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.slider-container .description {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
 }
-
-.btn {
-    background: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
 footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
     width: 100%;
-    position: absolute;
+    background-color: #111010;
+    color: white;
+    padding: 1px ;
+    text-align: center;
+    position: fixed;
     bottom: 0;
-}
-
-footer .container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
